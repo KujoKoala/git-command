@@ -1,0 +1,50 @@
+创建版本库：
+	git init
+	git add readme.txt
+	git commit -m "xxx"
+
+查看状态：
+	git status
+	git diff
+
+版本回退：
+	git log
+	git reset --hard HEAD^
+	HEAD^^ HEAD~100
+	git reflog
+	git reset --hard 3628164
+
+撤销修改：
+	git checkout -- readme.txt
+	git reset HEAD file
+
+删除：
+	git rm  ；git commit
+	git checkout -- test.txt
+
+远程仓库：
+	ssh-keygen -t rsa -C "youremail@example.com"
+	git remote add origin git@github.com:michaelliao/learngit.git
+	git push -u origin master
+	git push origin master
+	git clone
+
+分支管理：
+	git checkout -b dev(git branch dev ; git checkout dev)
+	git branch
+	git checkout master
+	git merge dev
+	git branch -d dev
+	git merge --no-ff -m "merge with no-ff" dev
+	git log --graph --pretty=oneline --abbrev-commit
+	git stash
+	git stash list
+	git stash apply
+	git stash drop
+	git stash pop
+	git stash apply stash@{0}
+	git branch -D feature-vulcan
+	git push origin dev
+	git checkout -b dev origin/dev
+	git pull
+	git branch --set-upstream dev origin/dev
