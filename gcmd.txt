@@ -53,3 +53,10 @@
 	git tag
  	git tag v0.9 6224937
 	git show v0.9
+	git tag -a v0.1 -m "version 0.1 released" 3628164
+	git tag -s v0.2 -m "signed version 0.2 released" fec145a
+	git tag -d v0.1
+	git push origin v1.0
+	git push origin --tags
+	git tag -d v0.9
+	git push origin :refs/tags/v0.9
