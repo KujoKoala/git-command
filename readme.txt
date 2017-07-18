@@ -1,1 +1,1 @@
-a test for github22334455is
+a cmd for git
